@@ -1,0 +1,33 @@
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: rgb(1, 1, 63);
+}
+
+h1 {
+    color: azure;
+    text-align: center;
+}
+
+.survey-body {
+    background-color: floralwhite;
+    width: 80%;
+    margin: 1rem auto;
+    border: .4rem solid royalblue;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.survey-title {
+    border-bottom: .5rem;
+    margin-bottom: 3rem;
+}
+
+.required {
+    line-height: 0rem;
+    font-size: .7rem;
+}

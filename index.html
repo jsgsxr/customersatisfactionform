@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="./main.css" type="text/css" rel="stylesheet">
+      <title>Production Customer Survey | SSP</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="title">Customer Survey Form</h1>
+        </header>
+
+        <div class="survey-body">
+          <div class="survey-title">
+            <p id="description">Let us know how we did!</p>
+            <p class="required">(Items with an "*" are required!)</p>
+          </div>
+
+          <div class="survey-info">
+            <form id="survey-form" action="./thanks.html" target="_blank" method="post" autocomplete="on" name="customer-survey">
+                <label id="name-label" for="name">* Name</label>
+                <input id="name" value="name" name="name" type="text" placeholder="Your Name Here!" required>
+
+                <label id="email-label" for="email">* Email</label>
+                <input id="email" value="email" type="email" placeholder="Your Email Here!" required name="email">
+
+                <label id="number-label" for="age">Age (For research only)</label>
+                <input id="age" value="age" name="age" type="number" min="18" max="100" placeholder="Your Age Here">
+
+                <label for="event">* Event</label>
+                <input id="event" value="event" name="event" type="text" placeholder="Your Event We Serviced" required>
+
+                <label for="position">Your position for the event</label>
+                <select id="dropdown" name="position">
+                    <option value="promoter">Promoter</option>
+                    <option value="venue">Venue Management</option>
+                    <option value="talent">Talent Management</option>
+                    <option value="production">Production Subcontractor</option>
+                    <option value="church">Religious Leader</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="happiness">How happy were you with our service?</label>
+                <input type="radio" name="happiness" value="furious">Furious
+                <input type="radio" name="happiness" value="meh">Meh. . . 
+                <input type="radio" name="happiness" value="ok">It was OK, I guess
+                <input type="radio" name="happiness" value="pretty">Pretty Darn Happy
+                <input type="radio" name="happiness" value="ecstatic" checked>Ecstatic!!
+
+                <label for="services">Which Service(s) did we provide for you?</label>
+                <input type="checkbox" name="services1" value="sound"> Sound
+                <input type="checkbox" name="services2" value="lights"> Lights
+                <input type="checkbox" name="services3" value="video"> Video
+                <input type="checkbox" name="services4" value="staging"> Staging
+                <input type="checkbox" name="services5" value="rental"> Rental
+                <input type="checkbox" name="services6" value="engineering"> Engineering
+
+                <label for="suggestions">How can we do better? (Don't be shy, now)</label>
+                <textarea name="suggestions" rows="5" cols="40" placeholder="Come on! Tell us how to improve, or even what you liked about us."></textarea>
+
+                <button id="submit" name="submit" type="submit" value="submit">Submit!</button>
+
+            </form>
+          </div>  
+        </div>
+    </body>
