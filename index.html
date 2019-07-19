@@ -18,19 +18,23 @@
 
           <div class="survey-info">
             <form id="survey-form" action="./thanks.html" target="_blank" method="post" autocomplete="on" name="customer-survey">
+              <p>
                 <label id="name-label" for="name">* Name</label>
                 <input id="name" value="name" name="name" type="text" placeholder="Your Name Here!" required>
-
+              </p>
+              
+              <p>
                 <label id="email-label" for="email">* Email</label>
                 <input id="email" value="email" type="email" placeholder="Your Email Here!" required name="email">
+              </p>  
 
-                <label id="number-label" for="age">Age (For research only)</label>
-                <input id="age" value="age" name="age" type="number" min="18" max="100" placeholder="Your Age Here">
-
+              <p>
                 <label for="event">* Event</label>
                 <input id="event" value="event" name="event" type="text" placeholder="Your Event We Serviced" required>
+              </p>
 
-                <label for="position">Your position for the event</label>
+              <p>
+                <label class="position" for="position">Position</label>
                 <select id="dropdown" name="position">
                     <option value="promoter">Promoter</option>
                     <option value="venue">Venue Management</option>
@@ -39,28 +43,41 @@
                     <option value="church">Religious Leader</option>
                     <option value="other">Other</option>
                 </select>
+              </p>
 
-                <label for="happiness">How happy were you with our service?</label>
+              <fieldset>
+                <legend>How happy were you with our service?</legend>
                 <input type="radio" name="happiness" value="furious">Furious
                 <input type="radio" name="happiness" value="meh">Meh. . . 
-                <input type="radio" name="happiness" value="ok">It was OK, I guess
+                <input type="radio" name="happiness" value="ok">It was OK
                 <input type="radio" name="happiness" value="pretty">Pretty Darn Happy
                 <input type="radio" name="happiness" value="ecstatic" checked>Ecstatic!!
+              </fieldset>
 
-                <label for="services">Which Service(s) did we provide for you?</label>
+              <fieldset>
+                <legend>Which Service(s) did we provide for you?</legend>
                 <input type="checkbox" name="services1" value="sound"> Sound
                 <input type="checkbox" name="services2" value="lights"> Lights
                 <input type="checkbox" name="services3" value="video"> Video
                 <input type="checkbox" name="services4" value="staging"> Staging
                 <input type="checkbox" name="services5" value="rental"> Rental
                 <input type="checkbox" name="services6" value="engineering"> Engineering
+              </fieldset>
 
-                <label for="suggestions">How can we do better? (Don't be shy, now)</label>
+              <p>
+                <label id="number-label" for="used">How many events with us?</label>
+                <input id="used" value="used" name="used" type="number" min="1" max="1000" placeholder="80">
+              </p>
+
+              <p>
+                <label class="suggest" for="suggestions">How can we do better? (Don't be shy, now)</label>
                 <textarea name="suggestions" rows="5" cols="40" placeholder="Come on! Tell us how to improve, or even what you liked about us."></textarea>
+              </p>  
 
-                <button id="submit" name="submit" type="submit" value="submit">Submit!</button>
+                <p><button id="submit" name="submit" type="submit" value="submit">Submit!</button></p>
 
             </form>
           </div>  
         </div>
     </body>
+</html>    

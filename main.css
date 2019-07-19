@@ -13,21 +13,61 @@ h1 {
 }
 
 .survey-body {
-    background-color: floralwhite;
+    background-color: rgb(255, 254, 253);
     width: 80%;
     margin: 1rem auto;
     border: .4rem solid royalblue;
     border-radius: 2rem;
     padding: 1rem 2rem;
-    text-align: center;
+    max-width: 45rem;
 }
 
 .survey-title {
     border-bottom: .5rem;
     margin-bottom: 3rem;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .required {
     line-height: 0rem;
     font-size: .7rem;
+}
+
+.survey-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+input {
+    margin-right: .5rem;
+}
+
+label {
+    margin-right: 2rem;
+    margin-left: 5rem;
+    width: 40%;
+    text-align: right;
+}
+
+#number-label {
+    margin-left: 0.8rem;
+}
+
+.position {
+    margin-left: 6.1rem;
+}
+
+fieldset {
+    margin: 1rem auto;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-left: .8rem;
+}
+
+.suggest {
+    vertical-align: top;
 }
